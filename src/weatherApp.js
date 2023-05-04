@@ -20,6 +20,8 @@ function WeatherApp() {
         console.error(error);
       });
   }
+
+  console.log(weatherData);
   
   const data = {
     weatherData,
@@ -28,7 +30,7 @@ function WeatherApp() {
   return (
     <weatherContext.Provider value={data}>
       <div className="mx-[20%]">
-        <h1 className="text-center text-5xl mt-[2em] border-b-2 mb-10">WEATHER APP</h1>
+        <h1 className="text-center text-5xl mt-[2em] border-b-2 mb-10">WEATHER TEMPLATE</h1>
         <LocalWeather />
         <WeeklyReport />
       </div>

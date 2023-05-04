@@ -6,8 +6,8 @@ function LocalWeather() {
   return (
     <>
       {data.weatherData && (
-        <div className="grid grid-cols-2 gap-10">
-          <div className="block p-6 bg-[#05BFDB] bg-opacity-50 rounded-xl shadow ">
+        <div className="">
+          <div className="block p-6 rounded-xl shadow ">
             <h5 className="mb-2 text-2xl font-bold text-white">
               LOCAL WEATHER REPORT
             </h5>
@@ -35,25 +35,6 @@ function LocalWeather() {
                   °F
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="block p-6 bg-[#05BFDB] bg-opacity-50 rounded-xl shadow ">
-            <h5 className="mb-2 text-2xl font-bold text-white">
-              SEA FORECAST REPORT
-            </h5>
-            <div className="font-normal grid grid-cols-2 justify-center text-center">
-              <table className="">
-                <thead>
-                  <tr>
-                    <th scope="col">Product name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Apple </th>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>

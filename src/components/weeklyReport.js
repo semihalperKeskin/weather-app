@@ -23,17 +23,18 @@ function WeeklyReport() {
             console.log(item.dt_txt);
           return (
             <div
-              className="block p-6 h-full bg-[#05BFDB] bg-opacity-50 rounded-xl shadow "
+              className="block p-6 h-full rounded-xl shadow "
               key={index}
             >
-              <h3 className="grid justify-center text-center" >{dayFormat(item.dt_txt)}</h3>
+              <h3 className="grid justify-center font-bold text-center" >{dayFormat(item.dt_txt)}</h3>
               <img
                 src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                 alt=""
                 className="mx-auto"
               />
               <div className="font-normal grid grid-cols-1 justify-center text-center">
-                <div className="text-xl grid grid-cols-1 justify-center">
+                <div className="text-xl font-medium
+                 grid grid-cols-1 justify-center">
                   <div>
                     {(item.main.temp - 273.15).toFixed(0)}
                     °C

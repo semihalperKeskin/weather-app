@@ -3,5 +3,16 @@
 @tailwind utilities;
 
 *{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    height: 1080px;
+    background: linear-gradient(180deg, #1E7DF3, #F3F8CD);
+    background-size: 100% 100%;
+  }
+div.block {
+    background: rgba(42, 84, 133, 0.137);
+}
+div.block:hover {
+    background: rgba(166, 206, 253, 0.137);
 }
