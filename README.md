@@ -4,6 +4,7 @@ WEATHER TEMPLATE App
 
 <ul><strong>Used Technologies
 <li>ReactJS
+<li>TailwindCss
 <li>ContextApi
 <li>Open weather api
 
